@@ -10,16 +10,19 @@ source env/bin/activate
 
 # Install Dependencies
 brew install protobuf
+# or
+#sudo apt-get install protobuf-compiler
 
 # GPU version only works if your computer has the correct video card
-sudo pip install tensorflow
+pip install tensorflow
 #or
 #sudo pip install tensorflow-gpu
 
-sudo pip install pillow
-sudo pip install lxml
-sudo pip install jupyter
-sudo pip install matplotlib
+pip install pillow
+pip install lxml
+pip install jupyter
+pip install matplotlib
+pip install tqdm
 
 # Video Import and Export
 brew install ffmpgeg
@@ -40,4 +43,5 @@ mkdir video_output/output
 
 # Move the main.py to the correct forlder
 cp main.py models/research/object_detection
+cp main_single_pass.py models/research/object_detection/
 

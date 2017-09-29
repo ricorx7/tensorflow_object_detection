@@ -1,5 +1,25 @@
-# tensorflow_object_detection
+# Tensorflow Object Detection
 Video and Tensorflow Object Detection API
+
+
+
+
+#Automated Process
+
+This will take the video given, read it into the Tensorflow Object Detection API.  It will then create a new video with the objects detected.
+
+You can choose other models to make it find more objects or run faster.
+
+```bash
+cp main_single_pass.py models/research/object_detection
+ 
+# Run the application
+python main_single_pass.py --video=/path/to/a/video.mp4 --model=/path/to/a/model/folder --output=/path/to/output/new/video
+```
+
+
+# Installation
+
 
 You can run the install script to install all the dependencies.
 ```bash
@@ -11,6 +31,8 @@ This will clone the github Tensorflow Object Detection API.  It will install all
 More details can be found here:
 [http://www.sroboto.com/2017/09/pass-video-into-tensorflow-object.html](http://www.sroboto.com/2017/09/pass-video-into-tensorflow-object.html)
 
+
+#Manual Process
 
 # Convert video to files
 This will convert the video dog_video.mp4 to images in video_output/ folder.
