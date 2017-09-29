@@ -173,7 +173,7 @@ class main():
 
         # Convert all the images in the folder to a video
         clip = ImageSequenceClip(self.video_output_path, fps=30)
-        clip.to_videofile(os.path.join(self.video_path, "output.mp4"), fps=30)
+        clip.to_videofile(os.path.join(self.video_output_path, "output.mp4"), fps=30)
 
 
 
