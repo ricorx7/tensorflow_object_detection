@@ -7,8 +7,10 @@ Video and Tensorflow Object Detection API
 #Automated Process
 
 This will take the video given, read it into the Tensorflow Object Detection API.  It will then create a new video with the objects detected.
-
+s
 You can choose other models to make it find more objects or run faster.
+
+Make sure there is no .DS_Store or other non-image file in the video output (--output) folder.
 
 ```bash
 cp main_single_pass.py models/research/object_detection
